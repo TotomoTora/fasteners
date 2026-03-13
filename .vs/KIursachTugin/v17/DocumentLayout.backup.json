@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|c:\\users\\tugin\\desktop\\krepech_shop\\kiursachtugin\\kiursachtugin\\orderdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\orderdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\orderdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\orderdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\ordereditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\ordereditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\dataaccess\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\dataaccess\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\categoryeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\categoryeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\categoriesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\categoriesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\categoryeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\categoryeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\usersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\usersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\kiursachtugin\\categoriesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83C392D1-D6F7-467F-88CC-53DF38342968}|KIursachTugin\\KIursachTugin.csproj|solutionrelative:kiursachtugin\\categoriesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\OrderDetailsForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\OrderDetailsForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\OrderDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "KIursachTugin\\OrderDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:48:19.629Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\OrderEditForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\OrderEditForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\OrderEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "KIursachTugin\\OrderEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:48:08.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\LoginForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\LoginForm.cs",
+              "RelativeToolTip": "KIursachTugin\\LoginForm.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowFMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:32:48.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderDetailsForm.cs",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\OrderDetailsForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\OrderDetailsForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\OrderDetailsForm.cs",
+              "RelativeToolTip": "KIursachTugin\\OrderDetailsForm.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:31:46.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoriesForm.cs",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\CategoriesForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\CategoriesForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\CategoriesForm.cs",
+              "RelativeToolTip": "KIursachTugin\\CategoriesForm.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:31:32.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryEditForm.cs",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\CategoryEditForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\CategoryEditForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\CategoryEditForm.cs",
+              "RelativeToolTip": "KIursachTugin\\CategoryEditForm.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:31:16.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\DataAccess\\UserRepository.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\DataAccess\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\DataAccess\\UserRepository.cs",
+              "RelativeToolTip": "KIursachTugin\\DataAccess\\UserRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAAEMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:27:46.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\MainForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\MainForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "KIursachTugin\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T13:59:46.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\LoginForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "KIursachTugin\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T13:59:44.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsersForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\UsersForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\UsersForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\UsersForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "KIursachTugin\\UsersForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T13:59:03.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\CategoryEditForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\CategoryEditForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\CategoryEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "KIursachTugin\\CategoryEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T13:59:01.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoriesForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\CategoriesForm.cs",
+              "RelativeDocumentMoniker": "KIursachTugin\\CategoriesForm.cs",
+              "ToolTip": "C:\\Users\\tugin\\Desktop\\Krepech_shop\\KIursachTugin\\KIursachTugin\\CategoriesForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "KIursachTugin\\CategoriesForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T13:59:00.114Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
