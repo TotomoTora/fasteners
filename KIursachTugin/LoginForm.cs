@@ -1,13 +1,6 @@
 ﻿using KIursachTugin.DataAccess;
 using KIursachTugin.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 //connectionString="Server=10.207.106.12;Database=db103;Uid=user103;Pwd=hf32;SslMode=None;"
 
@@ -48,6 +41,8 @@ namespace KIursachTugin
                 if (user != null)
                 {
                     // Открытие главной формы
+                    Session.CurrentUser = user;
+
                     CurrentUser.Id = user.Id;
                     CurrentUser.Role = user.RoleName;
 
