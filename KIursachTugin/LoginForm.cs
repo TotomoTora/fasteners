@@ -1,8 +1,11 @@
 ﻿using KIursachTugin.DataAccess;
 using KIursachTugin.Models;
 using System;
+<<<<<<< HEAD
 using System.Drawing;
 using System.Threading.Tasks;
+=======
+>>>>>>> 8ea5cbc2edfeca761e752f0639e7bc8fa8570526
 using System.Windows.Forms;
 
 namespace KIursachTugin
@@ -63,8 +66,14 @@ namespace KIursachTugin
 
                 if (user != null)
                 {
+<<<<<<< HEAD
                     // Сохраняем данные пользователя
                     Session.CurrentUser = user;
+=======
+                    // Открытие главной формы
+                    Session.CurrentUser = user;
+
+>>>>>>> 8ea5cbc2edfeca761e752f0639e7bc8fa8570526
                     CurrentUser.Id = user.Id;
                     CurrentUser.Login = user.Login;
                     CurrentUser.Role = user.RoleName;

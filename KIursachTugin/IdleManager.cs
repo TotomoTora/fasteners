@@ -1,7 +1,18 @@
 ﻿using System;
+<<<<<<< HEAD
 using System.Linq;
 using System.Windows.Forms;
 using System.Configuration;
+=======
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Configuration;
+using System.Windows.Forms;
+using KIursachTugin.DataAccess;
+using KIursachTugin.Models;
+>>>>>>> 8ea5cbc2edfeca761e752f0639e7bc8fa8570526
 
 namespace KIursachTugin
 {
@@ -10,6 +21,11 @@ namespace KIursachTugin
         private static Timer idleTimer;
         private static int idleSeconds = 0;
         private static int idleLimit;
+<<<<<<< HEAD
+=======
+
+        // Флаг, чтобы MessageFilter добавлялся только один раз
+>>>>>>> 8ea5cbc2edfeca761e752f0639e7bc8fa8570526
         private static bool filterAdded = false;
 
         public static void Start()
@@ -44,6 +60,10 @@ namespace KIursachTugin
             if (idleSeconds >= idleLimit)
             {
                 idleTimer.Stop();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8ea5cbc2edfeca761e752f0639e7bc8fa8570526
                 MessageBox.Show(
                     "Система была заблокирована из-за отсутствия активности.",
                     "Блокировка",
@@ -70,6 +90,10 @@ namespace KIursachTugin
                     form.Close();
             }
 
+<<<<<<< HEAD
+=======
+            // Показываем форму авторизации
+>>>>>>> 8ea5cbc2edfeca761e752f0639e7bc8fa8570526
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
 
