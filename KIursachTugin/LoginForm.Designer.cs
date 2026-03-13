@@ -36,6 +36,10 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.picCaptcha = new System.Windows.Forms.PictureBox();
+            this.txtCaptcha = new System.Windows.Forms.TextBox();
+            this.btnRefreshCaptcha = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.picCaptcha)).BeginInit();
             this.SuspendLayout();
             // 
             // lblLogin
@@ -118,13 +122,47 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // picCaptcha
+            // 
+            this.picCaptcha.Location = new System.Drawing.Point(12, 238);
+            this.picCaptcha.Name = "picCaptcha";
+            this.picCaptcha.Size = new System.Drawing.Size(177, 30);
+            this.picCaptcha.TabIndex = 7;
+            this.picCaptcha.TabStop = false;
+            // 
+            // txtCaptcha
+            // 
+            this.txtCaptcha.BackColor = System.Drawing.Color.White;
+            this.txtCaptcha.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.txtCaptcha.Location = new System.Drawing.Point(12, 274);
+            this.txtCaptcha.Name = "txtCaptcha";
+            this.txtCaptcha.Size = new System.Drawing.Size(137, 34);
+            this.txtCaptcha.TabIndex = 8;
+            // 
+            // btnRefreshCaptcha
+            // 
+            this.btnRefreshCaptcha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.btnRefreshCaptcha.FlatAppearance.BorderSize = 0;
+            this.btnRefreshCaptcha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefreshCaptcha.Font = new System.Drawing.Font("Microsoft Himalaya", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefreshCaptcha.Location = new System.Drawing.Point(155, 274);
+            this.btnRefreshCaptcha.Name = "btnRefreshCaptcha";
+            this.btnRefreshCaptcha.Size = new System.Drawing.Size(34, 34);
+            this.btnRefreshCaptcha.TabIndex = 9;
+            this.btnRefreshCaptcha.Text = "⟲";
+            this.btnRefreshCaptcha.UseVisualStyleBackColor = false;
+            this.btnRefreshCaptcha.Click += new System.EventHandler(this.btnRefreshCaptcha_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(199, 235);
+            this.ClientSize = new System.Drawing.Size(198, 234);
             this.ControlBox = false;
+            this.Controls.Add(this.btnRefreshCaptcha);
+            this.Controls.Add(this.txtCaptcha);
+            this.Controls.Add(this.picCaptcha);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
@@ -138,7 +176,7 @@
             this.MinimizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.LoginForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picCaptcha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,6 +191,9 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox picCaptcha;
+        private System.Windows.Forms.TextBox txtCaptcha;
+        private System.Windows.Forms.Button btnRefreshCaptcha;
     }
 }
 

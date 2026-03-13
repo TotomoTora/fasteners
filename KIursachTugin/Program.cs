@@ -16,6 +16,7 @@ namespace KIursachTugin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            IdleManager.Start();
             Application.Run(new LoginForm());
         }
     }

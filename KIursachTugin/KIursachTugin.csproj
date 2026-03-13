@@ -79,6 +79,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaptchaGenerator.cs" />
     <Compile Include="CategoriesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +94,7 @@
     </Compile>
     <Compile Include="DataAccess\ProductRepository.cs" />
     <Compile Include="DataAccess\UserRepository.cs" />
+    <Compile Include="IdleManager.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
