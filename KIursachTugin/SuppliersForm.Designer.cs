@@ -36,6 +36,7 @@ namespace KIursachTugin
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnView = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuppliers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@ namespace KIursachTugin
             this.dgvSuppliers.Name = "dgvSuppliers";
             this.dgvSuppliers.ReadOnly = true;
             this.dgvSuppliers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSuppliers.Size = new System.Drawing.Size(485, 259);
+            this.dgvSuppliers.Size = new System.Drawing.Size(589, 267);
             this.dgvSuppliers.TabIndex = 0;
             // 
             // btnAdd
@@ -58,7 +59,7 @@ namespace KIursachTugin
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAdd.Location = new System.Drawing.Point(12, 265);
+            this.btnAdd.Location = new System.Drawing.Point(12, 273);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(107, 27);
             this.btnAdd.TabIndex = 5;
@@ -72,7 +73,7 @@ namespace KIursachTugin
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.btnEdit.Location = new System.Drawing.Point(125, 265);
+            this.btnEdit.Location = new System.Drawing.Point(125, 273);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(107, 27);
             this.btnEdit.TabIndex = 6;
@@ -86,7 +87,7 @@ namespace KIursachTugin
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.btnDelete.Location = new System.Drawing.Point(366, 265);
+            this.btnDelete.Location = new System.Drawing.Point(468, 273);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(107, 27);
             this.btnDelete.TabIndex = 7;
@@ -94,10 +95,26 @@ namespace KIursachTugin
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnView
+            // 
+            this.btnView.AccessibleRole = System.Windows.Forms.AccessibleRole.SplitButton;
+            this.btnView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.btnView.FlatAppearance.BorderSize = 0;
+            this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnView.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.btnView.Location = new System.Drawing.Point(238, 273);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(105, 27);
+            this.btnView.TabIndex = 10;
+            this.btnView.Text = "Просмотр";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
             // SuppliersForm
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(485, 304);
+            this.ClientSize = new System.Drawing.Size(587, 312);
+            this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
@@ -119,5 +136,6 @@ namespace KIursachTugin
         private Button btnAdd;
         private Button btnEdit;
         private Button btnDelete;
+        private Button btnView;
     }
 }

@@ -2,15 +2,6 @@
 using System.Linq;
 using System.Windows.Forms;
 using System.Configuration;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
-using System.Windows.Forms;
-using KIursachTugin.DataAccess;
-using KIursachTugin.Models;
-
 
 namespace KIursachTugin
 {

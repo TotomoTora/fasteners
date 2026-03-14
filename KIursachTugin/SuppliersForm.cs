@@ -31,10 +31,21 @@ namespace KIursachTugin
             using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 conn.Open();
-                string sql = "SELECT SuppliersID AS 'ID', SuppliersName AS 'Название', Address AS 'Адрес', Phone AS 'Номер' FROM suppliers WHERE is_active = 1 ORDER BY SuppliersName";
+
+                string sql = @"
+                    SELECT 
+                        SuppliersID AS 'ID',
+                        SuppliersName AS 'Название',
+                        CONCAT(LEFT(Address,10),'...') AS 'Адрес',
+                        CONCAT(LEFT(Phone,3),'****',RIGHT(Phone,2)) AS 'Номер'
+                    FROM suppliers
+                    WHERE is_active = 1
+                    ORDER BY SuppliersName";
+
                 MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
                 DataTable table = new DataTable();
                 adapter.Fill(table);
+
                 dgvSuppliers.DataSource = table;
             }
         }
@@ -81,6 +92,20 @@ namespace KIursachTugin
                 }
                 LoadSuppliers();
             }
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            if (dgvSuppliers.CurrentRow == null)
+            {
+                MessageBox.Show("Выберите поставщика!");
+                return;
+            }
+
+            int id = Convert.ToInt32(dgvSuppliers.CurrentRow.Cells["ID"].Value);
+
+            SupplierDetailsForm frm = new SupplierDetailsForm(id);
+            frm.ShowDialog();
         }
     }
 }
