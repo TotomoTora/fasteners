@@ -35,6 +35,7 @@ private void InitializeComponent()
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnView = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,9 +59,9 @@ private void InitializeComponent()
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAdd.Location = new System.Drawing.Point(12, 284);
+            this.btnAdd.Location = new System.Drawing.Point(0, 284);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(107, 27);
+            this.btnAdd.Size = new System.Drawing.Size(105, 27);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Добавить";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -72,9 +73,9 @@ private void InitializeComponent()
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.btnEdit.Location = new System.Drawing.Point(125, 284);
+            this.btnEdit.Location = new System.Drawing.Point(111, 284);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(107, 27);
+            this.btnEdit.Size = new System.Drawing.Size(105, 27);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Редактировать";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -86,18 +87,34 @@ private void InitializeComponent()
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.btnDelete.Location = new System.Drawing.Point(382, 284);
+            this.btnDelete.Location = new System.Drawing.Point(384, 284);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(107, 27);
+            this.btnDelete.Size = new System.Drawing.Size(105, 27);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Удалить";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnView
+            // 
+            this.btnView.AccessibleRole = System.Windows.Forms.AccessibleRole.SplitButton;
+            this.btnView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.btnView.FlatAppearance.BorderSize = 0;
+            this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnView.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.btnView.Location = new System.Drawing.Point(222, 284);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(105, 27);
+            this.btnView.TabIndex = 9;
+            this.btnView.Text = "Просмотр";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
             // UsersForm
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(501, 323);
+            this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
@@ -122,5 +139,6 @@ private void InitializeComponent()
         private Button btnAdd;
         private Button btnEdit;
         private Button btnDelete;
+        private Button btnView;
     }
 }

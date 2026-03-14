@@ -32,15 +32,21 @@ namespace KIursachTugin
             using (var conn = new MySqlConnection(_connectionString))
             {
                 conn.Open();
+
                 string sql = @"
                     SELECT u.UserID,
                            u.UserLogin AS 'Логин',
-                           CONCAT(u.UserSurname, ' ', u.UserName, ' ', u.UserPatronymic) AS 'ФИО',
-                           r.RoleName AS 'Роль'
-                    FROM `user` u
+                    CONCAT(
+                            LEFT(u.UserName,1),'******',
+                            LEFT(u.UserSurname,1),'******',
+                            LEFT(u.UserPatronymic,1),'******'
+                            ) AS 'ФИО',
+                    r.RoleName AS 'Роль'
+                    FROM user u
                     LEFT JOIN role r ON u.RoleID = r.RoleID
                     WHERE u.is_active = 1
                     ORDER BY u.UserLogin";
+
                 MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
                 DataTable table = new DataTable();
                 adapter.Fill(table);
@@ -112,29 +118,18 @@ namespace KIursachTugin
             LoadUsers();
         }
 
-        //private void btnDelete_Click(object sender, EventArgs e)
-        //{
-        //    if (dgvUsers.CurrentRow == null)
-        //    {
-        //        MessageBox.Show("Выберите пользователя!");
-        //        return;
-        //    }
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            if (dgvUsers.CurrentRow == null)
+            {
+                MessageBox.Show("Выберите пользователя!");
+                return;
+            }
 
-        //    int id = Convert.ToInt32(dgvUsers.CurrentRow.Cells["UserID"].Value);
+            int id = Convert.ToInt32(dgvUsers.CurrentRow.Cells["UserID"].Value);
 
-
-        //    if (MessageBox.Show("Удалить выбранного пользователя?", "Подтверждение", MessageBoxButtons.YesNo) == DialogResult.Yes)
-        //    {
-        //        using (var conn = new MySqlConnection(_connectionString))
-        //        {
-        //            conn.Open();
-        //            string sql = "UPDATE user SET is_active = 0 WHERE UserID = @id";
-        //            MySqlCommand cmd = new MySqlCommand(sql, conn);
-        //            cmd.Parameters.AddWithValue("@id", id);
-        //            cmd.ExecuteNonQuery();
-        //        }
-        //        LoadUsers();
-        //    }
-        //}
+            UserDetailsForm frm = new UserDetailsForm(id);
+            frm.ShowDialog();
+        }
     }
 }
