@@ -6,9 +6,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.IO;
@@ -20,7 +17,12 @@ namespace KIursachTugin
         private ProductRepository repo;
         private string _connectionString;
 
-     
+        private int pageSize = 4;      // товаров на странице
+        private int currentPage = 1;   // текущая страница
+        private int totalRows = 0;     // всего товаров
+        private int totalPages = 0;    // всего страниц
+
+
         public ProductsForm()
         {
             _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
@@ -77,36 +79,57 @@ namespace KIursachTugin
             {
                 conn.Open();
 
+                // считаем количество товаров
+                string countSql = @"
+        SELECT COUNT(*)
+        FROM products p
+        WHERE p.is_active = 1
+        AND (p.Name LIKE @s OR p.Description LIKE @s)
+        AND (@cat = 0 OR p.CategoriesID = @cat)";
+
+                using (MySqlCommand countCmd = new MySqlCommand(countSql, conn))
+                {
+                    countCmd.Parameters.AddWithValue("@s", "%" + search + "%");
+                    countCmd.Parameters.AddWithValue("@cat", categoryId);
+
+                    totalRows = Convert.ToInt32(countCmd.ExecuteScalar());
+                }
+
+                totalPages = (int)Math.Ceiling((double)totalRows / pageSize);
+
+                int offset = (currentPage - 1) * pageSize;
+
                 string sql = @"
-                    SELECT p.ProductID AS 'ID',
-                           p.Name AS 'Название',
-                           p.Price AS 'Цена',
-                           p.Quantity AS 'Количество',
-                           c.CategoriesName AS 'Категория',
-                           s.SuppliersName AS 'Поставщик',
-                           p.Description AS 'Описание',
-                           p.ImagePath
-                    FROM products p
-                    LEFT JOIN categories c ON p.CategoriesID = c.CategoriesID
-                    LEFT JOIN suppliers s ON p.SuppliersID = s.SuppliersID
-                    WHERE p.is_active = 1
-                      AND (p.Name LIKE @s OR p.Description LIKE @s)
-                      AND (@cat = 0 OR p.CategoriesID = @cat)
-                    ORDER BY p.Name";
+        SELECT p.ProductID AS 'ID',
+               p.Name AS 'Название',
+               p.Price AS 'Цена',
+               p.Quantity AS 'Кол-во',
+               c.CategoriesName AS 'Категория',
+               s.SuppliersName AS 'Поставщик',
+               p.Description AS 'Описание',
+               p.ImagePath
+        FROM products p
+        LEFT JOIN categories c ON p.CategoriesID = c.CategoriesID
+        LEFT JOIN suppliers s ON p.SuppliersID = s.SuppliersID
+        WHERE p.is_active = 1
+        AND (p.Name LIKE @s OR p.Description LIKE @s)
+        AND (@cat = 0 OR p.CategoriesID = @cat)
+        ORDER BY p.Name
+        LIMIT @limit OFFSET @offset";
 
                 using (MySqlCommand cmd = new MySqlCommand(sql, conn))
                 {
                     cmd.Parameters.AddWithValue("@s", "%" + search + "%");
                     cmd.Parameters.AddWithValue("@cat", categoryId);
+                    cmd.Parameters.AddWithValue("@limit", pageSize);
+                    cmd.Parameters.AddWithValue("@offset", offset);
 
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                     DataTable table = new DataTable();
                     adapter.Fill(table);
 
                     if (!table.Columns.Contains("Фото"))
-                    {
                         table.Columns.Add("Фото", typeof(Image));
-                    }
 
                     foreach (DataRow row in table.Rows)
                     {
@@ -116,9 +139,7 @@ namespace KIursachTugin
                         if (!string.IsNullOrEmpty(imagePath) && File.Exists(fullPath))
                         {
                             using (var img = Image.FromFile(fullPath))
-                            {
                                 row["Фото"] = new Bitmap(img, new Size(80, 80));
-                            }
                         }
                         else
                         {
@@ -126,43 +147,12 @@ namespace KIursachTugin
                             if (File.Exists(defaultPath))
                             {
                                 using (var img = Image.FromFile(defaultPath))
-                                {
                                     row["Фото"] = new Bitmap(img, new Size(80, 80));
-                                }
                             }
                         }
                     }
 
-                    //"Описание"
                     dgvProducts.DataSource = table;
-
-                    if (dgvProducts.Columns.Contains("Категория"))
-                    {
-                        dgvProducts.Columns["Категория"].DefaultCellStyle.WrapMode =
-                            DataGridViewTriState.True;
-                    }
-
-                    if (dgvProducts.Columns.Contains("Поставщик"))
-                    {
-                        dgvProducts.Columns["Поставщик"].DefaultCellStyle.WrapMode =
-                            DataGridViewTriState.True;
-                    }
-
-                    if (dgvProducts.Columns.Contains("Название"))
-                    {
-                        dgvProducts.Columns["Название"].DefaultCellStyle.WrapMode =
-                            DataGridViewTriState.True;
-                    }
-
-                    if (dgvProducts.Columns.Contains("Описание"))
-                    {
-                        dgvProducts.Columns["Описание"].DefaultCellStyle.WrapMode =
-                            DataGridViewTriState.True;
-                    }
-
-                    // Авто-высота строк
-                    dgvProducts.AutoSizeRowsMode =
-                        DataGridViewAutoSizeRowsMode.AllCells;
 
                     if (dgvProducts.Columns.Contains("ImagePath"))
                         dgvProducts.Columns["ImagePath"].Visible = false;
@@ -174,15 +164,15 @@ namespace KIursachTugin
 
                         imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
                     }
-                    dgvProducts.RowTemplate.Height = 200;
 
-                    if (dgvProducts.Columns.Contains("Описание"))
-                        dgvProducts.Columns["Описание"].Visible = true;
+                    dgvProducts.RowTemplate.Height = 80;
+
+                    lblPage.Text = $"Страница {currentPage} из {totalPages}";
                 }
             }
         }
 
-        private void ApplyFilters()
+        private void ApplyFilters(bool resetPage = true)
         {
             string search = txtSearch.Text.Trim();
             int categoryId = 0;
@@ -190,17 +180,19 @@ namespace KIursachTugin
             if (cbCategory.SelectedValue != null && cbCategory.SelectedValue is int)
                 categoryId = (int)cbCategory.SelectedValue;
 
+            if (resetPage)
+                currentPage = 1; // сброс страницы только при новом фильтре
+
             LoadProducts(search, categoryId);
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            ApplyFilters();
+            ApplyFilters(resetPage: true); // сброс на первую страницу при поиске
         }
-
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ApplyFilters();
+            ApplyFilters(resetPage: true); // сброс на первую страницу при выборе категории
         }
         private void btnRefresh_Click(object sender, EventArgs e)
         {
@@ -264,6 +256,22 @@ namespace KIursachTugin
                 !((e.KeyChar >= 'A' && e.KeyChar <= 'Z') || (e.KeyChar >= 'a' && e.KeyChar <= 'z')))
             {
                 e.Handled = true;
+            }
+        }
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (currentPage < totalPages)
+            {
+                currentPage++;
+                ApplyFilters(resetPage: false);
+            }
+        }
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            if (currentPage > 1)
+            {
+                currentPage--;
+                ApplyFilters(resetPage: false);
             }
         }
     }
